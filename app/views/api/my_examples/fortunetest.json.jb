@@ -1,1 +1,1 @@
-{Message: @message, Time: @time}
+{Message: @message, Time: @time, fortune: @fortune}
