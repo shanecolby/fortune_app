@@ -9,4 +9,14 @@ class Api::MyExamplesController < ApplicationController
     @message = "This is a test"
     render "fortunetest.json.jb"
   end
+
+  def winning_numbers
+    @winning_numbers = [rand(1..60)]
+    @winning_numbers << rand(1..60)
+    @winning_numbers << rand(1..60)
+    @winning_numbers << rand(1..60)
+    @winning_numbers << rand(1..60)
+    @winning_numbers << rand(1..60)
+    render "numbers.json.jb"
+  end
 end
